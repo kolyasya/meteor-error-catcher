@@ -1,8 +1,6 @@
-console.log('error catcher')
+import { Meteor } from 'meteor/meteor';
 
-const enableErrorCatcher = ({
-  errorCatcher
-}) => {
+const enableErrorCatcher = ({ errorCatcher }) => {
   if (Meteor.isServer) {
     const bound = Meteor.bindEnvironment((callback) => {
       callback();
@@ -18,21 +16,16 @@ const enableErrorCatcher = ({
     // Catch all meteor's errors by hijacking Meteor._debug
     // Save a link
     const originalMeteorDebug = Meteor._debug;
-    
-    Meteor._debug = function (message, stack) {
 
+    Meteor._debug = function (message, stack) {
       console.log('error happened');
 
       errorCatcher(message, stack);
 
       // Chain
-      return originalMeteorDebug.apply(this, arguments); 
+      return originalMeteorDebug.apply(this, arguments);
     };
   }
 };
 
-
-
-export {
-  enableErrorCatcher
-}
+export { enableErrorCatcher };
