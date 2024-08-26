@@ -1,6 +1,6 @@
 Package.describe({
   name: 'kolyasya:meteor-error-catcher',
-  version: '0.0.1-beta.0',
+  version: '0.0.1-beta.1',
   summary: 'Catch all server errors',
   git: 'https://github.com/kolyasya/meteor-error-catcher.git',
   documentation: './README.md',
