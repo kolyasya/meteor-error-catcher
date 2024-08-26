@@ -18,8 +18,6 @@ const enableErrorCatcher = ({ errorCatcher }) => {
     const originalMeteorDebug = Meteor._debug;
 
     Meteor._debug = function (message, stack) {
-      console.log('error happened');
-
       errorCatcher(message, stack);
 
       // Chain

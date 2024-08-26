@@ -7,9 +7,8 @@ Package.describe({
 });
 
 Package.onUse((api) => {
-  api.use('ecmascript');
-  api.use('typescript');
-  api.use('zodern:types');
+  api.use('ecmascript@0.16.8');
+  api.use('typescript@5.4.3');
 
   api.mainModule('./index.ts', ['server']);
 });
