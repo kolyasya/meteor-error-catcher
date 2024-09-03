@@ -8,7 +8,7 @@ ecmascript-runtime-client@0.12.2
 ecmascript-runtime-server@0.11.1
 fetch@0.1.5
 inter-process-messaging@0.1.2
-kolyasya:meteor-error-catcher@0.0.1-beta.1
+kolyasya:meteor-error-catcher@0.0.1-beta.3
 meteor@2.0.1
 modern-browsers@0.1.11
 modules@0.20.1
@@ -16,3 +16,4 @@ modules-runtime@0.13.2
 promise@1.0.0
 react-fast-refresh@0.2.9
 typescript@5.4.3
+zodern:types@1.0.13
