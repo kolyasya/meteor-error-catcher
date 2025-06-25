@@ -16,7 +16,7 @@ interface ErrorCatcherParams {
  */
 const enableErrorCatcher = async ({ handleError }: ErrorCatcherParams) => {
   if (Meteor.isServer) {
-    console.log('Error Catcher Enabled');
+    console.log('kolyasya:meteor-error-catcher | Enabled');
 
     /**
      * Exit code 7
